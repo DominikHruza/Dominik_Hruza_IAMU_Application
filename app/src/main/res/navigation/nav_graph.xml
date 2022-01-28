@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recipeListFragment">
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="hr.dhruza.iamu_application.fragments.RecipeListFragment"
+        android:label="@string/recipes_label"
+        tools:layout="@layout/fragment_recipe_list">
+
+        <action
+            android:id="@+id/action_recipeListFragment_to_recipeDetailFragment"
+            app:destination="@+id/recipeDetailFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="hr.dhruza.iamu_application.fragments.AboutFragment"
+        android:label="@string/about_label"
+        tools:layout="@layout/fragment_about"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="hr.dhruza.iamu_application.fragments.SettingsFragment"
+        android:label="@string/settings_label"
+        tools:layout="@layout/fragment_settings"/>
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="hr.dhruza.iamu_application.fragments.RecipeDetailFragment"
+        android:label="@string/recipe_details_label"
+        tools:layout="@layout/fragment_recipe_detail">
+        <argument
+            android:name="recipeId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_recipeDetailFragment_to_recipeListFragment"
+            app:destination="@+id/recipeListFragment"
+            app:popUpTo="@id/recipeListFragment"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+</navigation>

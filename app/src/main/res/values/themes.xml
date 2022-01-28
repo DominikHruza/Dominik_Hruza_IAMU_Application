@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IAMU_Application" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@android:color/holo_red_light</item>
+        <item name="colorPrimaryVariant">@android:color/holo_red_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@android:color/holo_green_dark</item>
+        <item name="colorSecondaryVariant">@android:color/holo_green_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.IAMU_Application">
+        <item name="android:textSize">@dimen/splashTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+</resources>

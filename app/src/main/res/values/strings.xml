@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="splashText">Please Wait</string>
+    <string name="settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_settings_available">No settings available</string>
+    <string name="about_author">Author: Dominik Hruza</string>
+    <string name="about_year">2021/2022</string>
+    <string name="recipes_label">Recipes</string>
+    <string name="about_label">About</string>
+    <string name="settings_label">Settings</string>
+    <string name="exit">Exit app</string>
+    <string name="really">Really exit app?</string>
+    <string name="calories">%d calories</string>
+    <string name="recipe_details_label">Details</string>
+</resources>

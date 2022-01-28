@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="recipe"
+            type="hr.dhruza.iamu_application.model.Recipe" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@android:color/holo_green_dark"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivRecipe"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@{recipe.image}"
+                />
+
+            <TextView
+                android:id="@+id/tvRecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@{recipe.label}" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
